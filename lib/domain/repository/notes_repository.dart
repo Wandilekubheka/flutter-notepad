@@ -55,6 +55,12 @@ class NotesRepository {
     } catch (e) {
       rethrow;
     }
+  }  Future<List<Note>> getNotes()async{
+    try {
+      return await databaseService.getAllFromDatabase();
+    } catch (e) {
+      rethrow;
+    }
   }
 
 }
