@@ -6,4 +6,5 @@ abstract class DatabaseRepository {
   Future<void> deleteFromDatabase(int id);
   Future<void> updateNote(Note newNote, int noteToUpdateID);
   Future<Note> getNote(int noteToUpdateID);
+  Future<List<Note>> getNotes();
 }
